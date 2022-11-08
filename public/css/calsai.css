@@ -1,0 +1,183 @@
+body {
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',YuGothic,'Yu Gothic',sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+hr{
+  height: 6px;
+  width:90%;
+  background-color:#00331A;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  text-align:center;
+}
+
+.body {
+  text-align: center;
+}
+
+.title{
+  font-size: 48px;
+  color: #FF0000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*index用*/
+.box1{
+  margin       : auto;
+  width        : 70%;
+  height       : 80%;
+  background   : #B3E2BC;
+  border-radius: 30px;
+}
+
+.textbox{
+  display: inline-block;
+  width: 17em;
+  padding-top: 1.5em;
+  margin: 1em 1em;
+  text-align:center;
+}
+
+.btn{
+  display: inline-block;
+  width: 17em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin: 1em 1em;
+  text-decoration: none;
+  background: rgba(0,124,0,0.8);
+  color: #ffffff;
+}
+
+.inline_block{
+  display: inline-block;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.switch{
+  font-size: 24px;
+  background-color: #97D077;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.child{
+  display: inline-block;
+  vertical-align: middle;
+  width:fit-content;
+  padding: 0;
+}
+
+.link{
+  font-size: 24px;
+  margin: 0;
+  padding:0;
+}
+
+#grand{
+  margin-top:1em;
+  margin-bottom:1em;
+  padding:0;
+}
+
+#check_cal{
+  margin-bottom: 1em;
+  padding:0;
+}
+
+
+.toggle_input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle_label {
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+
+.toggle_label:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+}
+
+.toggle_input:checked + .toggle_label {
+  background-color: #4BD865;
+}
+
+.toggle_input:checked + .toggle_label:after {
+  left: 20px;
+}
+
+.toggle_button {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  margin: auto;
+}
+
+/*get用*/
+
+.box2{
+  display:flex;
+  align-items:center;
+  margin: auto;
+  margin-bottom:1em;
+  width        : 70%;
+  height       : 100%;
+  background   : #E6FFCC;
+  border-radius: 10px;
+}
+
+.menu_name{
+  font-size: 36px;
+  color: #FF0000;
+  margin: 0;
+  padding: 0;
+}
+
+.order_num{
+  /*vertical-align:middle;*/
+  font-size: 24px;
+  float:left;
+  background-color: #97D077;
+  margin: 0;
+  padding: 0;
+}
+
+.rst{
+  display: block;
+  margin:auto;
+}
