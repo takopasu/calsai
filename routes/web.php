@@ -18,4 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/menus', [MenuController::class, 'index']);   
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+Route::controller(MenuController::class)->middleware(['auth'])->group(function(){
+    Route::get('/', 'index')->name('index');
+    Route::get('/get','get')->name('get');
+    Route::delete('/menus/{menu}', 'delete')->name('delete');
+});
