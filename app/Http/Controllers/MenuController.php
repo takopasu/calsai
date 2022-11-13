@@ -14,12 +14,10 @@ class MenuController extends Controller
     
     public function get(Menu $menu)
     {
-        return view('menus/get')->with(['menus'=>$menu->get()]);    
-    }
-    
-    public function delete(Menu $menu)
-    {
-        $menu->delete();
-        return redirect('/');
+        $menu = Menu::inRandomOrder()
+                        ->limit(5)
+                        ->get();
+                        
+        return view('menus/get') -> with(['menus' => $menu]);
     }
 }
