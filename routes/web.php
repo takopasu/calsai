@@ -29,3 +29,5 @@ Route::controller(MenuController::class)->middleware(['auth'])->group(function()
     Route::get('/get','get')->name('get');
     Route::delete('/menus/{menu}', 'delete')->name('delete');
 });
+
+Route::patch('/text/restore/{trashed_text}', 'TextController@restore')->name('text.restore');
