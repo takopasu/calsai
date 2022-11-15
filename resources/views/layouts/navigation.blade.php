@@ -18,6 +18,9 @@
                     <x-nav-link :href="route('get')" :active="request()->routeIs('get')">
                         {{ __('ガチャを引いたよ') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('save')" :active="request()->routeIs('save')">
+                        {{ __('保存内容') }}
+                    </x-nav-link>
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('このサイトについて') }}
                     </x-nav-link>

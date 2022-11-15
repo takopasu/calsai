@@ -56,6 +56,17 @@ hr{
   color: #ffffff;
 }
 
+.save{
+  display: inline-block;
+  width: 17em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin: 1em 1em;
+  text-decoration: none;
+  background: #97D077;
+  color: #12190E;
+}
+
 .inline_block{
   display: inline-block;
   width:100%;
