@@ -15,7 +15,7 @@
                     <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
                         {{ __('サイゼリヤn[kcal]ガチャ') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('get')" :active="request()->routeIs('get')">
+                    <x-nav-link :href="route('kcal')" :active="request()->routeIs('kcal')">
                         {{ __('ガチャを引いたよ') }}
                     </x-nav-link>
                     <x-nav-link :href="route('save')" :active="request()->routeIs('save')">
