@@ -26,8 +26,9 @@ require __DIR__.'/auth.php';
 
 Route::controller(MenuController::class)->middleware(['auth'])->group(function(){
     Route::get('/', 'index')->name('index');
-    Route::get('/get','get')->name('get');
+    Route::get('/kcal','kcal')->name('kcal');
     Route::get('/save','save')->name('save');
+    Route::post('/input','input')->name('input');
 });
 
 Route::patch('/text/restore/{trashed_text}', 'TextController@restore')->name('text.restore');

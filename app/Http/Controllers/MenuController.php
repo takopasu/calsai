@@ -14,17 +14,49 @@ class MenuController extends Controller
         return view('menus/index')->with(['menus'=>$menu->get()]);
     }
     
-    public function get(Menu $menu)
+  public function input(Request $request)
+  {
+    //   dump($request);
+      $input = $request['kcal'];
+      $input = explode(',', $input);
+    //   $input = gettype($input);
+    //   dd($input);
+      return redirect('/kcal')->withInput($input);
+  }
+    
+    public function kcal(Request $request,Menu $menu)
     {
     # params
-    $budget = 1000;
-    $menu= [];
+    // $budget=0;
+    // $budget= $request->kcal;
+    // $budget = $input;
+    // $budget = 1000;
+    // dd($budget);
+    $input = [
+        'input' => $request->old('0'),
+    ];
+    
+    // dd($input);
+    
+    $budget = $input["input"];
+    // $budget = gettype($budget);
+    // dd($budget);
 
-    $menus = DB::table('menus')
-                    ->where('price', '<', $budget)
+    $deinks = DB::table('menus')
+                    ->where('price', '<=', $budget)
+                    ->where('category','=','drink')
+                    // ->where('kcal', '!=',0)
                     ->get();
+                    
+    $menus = DB::table('menus')
+                ->where('price', '<=', $budget)
+                ->where('category','!=','drink')
+                // ->where('kcal', '!=',0)
+                ->get();
+                
     // dd($menus);
     // $test[];
+    $menu= [];
     $set=[];
     
     while(true){
@@ -35,7 +67,8 @@ class MenuController extends Controller
         $test=[];
         
         foreach($menus as $menu){
-            if($menu->price < $budget){
+            if($menu->price <= $budget){
+                // dd($menu->price <= $budget);
                 array_push($test,$menu);
             }
         }
@@ -52,13 +85,13 @@ class MenuController extends Controller
         // dump($menus->count());
         // dd($rand);
         
-        $price = $test[$rand] ->price;
+        $kcal = $test[$rand] ->price;
         // dd($price);
         // dd($test[$rand]);
         // dump($test[$rand]);
         // dd($test[$rand]->id);
         
-        if($price < $budget){
+        if($kcal <= $budget){
             array_push($set,$test[$rand]);
             // dd($set);
                 // dd($price);
@@ -80,10 +113,11 @@ class MenuController extends Controller
         // dd($menu);
         
         # calc
-        $budget -= $price;
+        $budget -= $kcal;
         // if ($budget === 0){
         //     break;
         // }
+
     
         // // dd($budget);
         // dump($budget);
@@ -94,7 +128,7 @@ class MenuController extends Controller
     $menu = $set;
     // dd($menu);
     
-    return view('menus/get') -> with(['menus' => $menu]);
+    return view('menus/kcal') -> with(['menus' => $menu]);
     }
     
     public function save(Menu $menu){
