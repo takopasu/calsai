@@ -17,11 +17,21 @@ class MenuController extends Controller
   public function input(Request $request)
   {
     //   dump($request);
-      $input = $request['kcal'];
-      $input = explode(',', $input);
-    //   $input = gettype($input);
-    //   dd($input);
-      return redirect('/kcal')->withInput($input);
+        $request->merge([
+        'switch' => $request->boolean('switch') ? 1 : 0,
+        ]);
+        
+        // $input = $request['kcal'];
+        // $switch = $request['switch'];
+      
+        $send = [
+           'input' => $request['kcal'],
+            'switch' => $request['switch'],
+           ];
+        
+          
+    //   dd($send);
+      return redirect('/kcal')->withInput($send);
   }
     
     public function kcal(Request $request,Menu $menu)
@@ -32,25 +42,35 @@ class MenuController extends Controller
     // $budget = $input;
     // $budget = 1000;
     // dd($budget);
+    
     $input = [
-        'input' => $request->old('0'),
+        'input' => $request->old('input'),
+        'switch' => $request->old('switch'),
     ];
     
     // dd($input);
     
-    $budget = $input["input"];
+    $budget = $input['input'];
+    $switch = $input['switch'];
     // $budget = gettype($budget);
-    // dd($budget);
-
-    $deinks = DB::table('menus')
-                    ->where('price', '<=', $budget)
-                    ->where('category','=','drink')
-                    // ->where('kcal', '!=',0)
-                    ->get();
+    // dump($switch);
+    
+    if($switch === "on"){
+        $drinks = DB::table('menus')
+                        ->where('category','=','drink')
+                        ->get();
+        }else{
+        $drinks = DB::table('menus')
+                        ->where('category','=','drink')
+                        ->where('type','!=','alcohol')
+                        ->get();
+        }
+        
+    // dd($drinks);
                     
     $menus = DB::table('menus')
-                ->where('price', '<=', $budget)
                 ->where('category','!=','drink')
+                ->where('kcal', '<=', $budget)
                 // ->where('kcal', '!=',0)
                 ->get();
                 
@@ -59,57 +79,53 @@ class MenuController extends Controller
     $menu= [];
     $set=[];
     
+    #choose drink
+    $rand = rand(0,count($drinks)-1);
+    $kcal = $drinks[$rand];
+    array_push($set,$drinks[$rand]);
+    // dd($set);
+    
+    
     while(true){
         // $menus =  array_filter($menus, function($filter){
         //       return $menus['price'] <= $budget;
         //     });
         
-        $test=[];
+        $food=[];
         
         foreach($menus as $menu){
-            if($menu->price <= $budget){
+            if($menu->kcal <= $budget){
                 // dd($menu->price <= $budget);
-                array_push($test,$menu);
+                array_push($food,$menu);
             }
         }
             
-        if(count($test) === 0){
+        if(count($food) === 0){
             break;
         }
         // dd($test);
         // dump($test);
         // dd(count($test));
         
-        $rand = rand(0,count($test)-1);
+        $rand = rand(0,count($food)-1);
         
         // dump($menus->count());
         // dd($rand);
         
-        $kcal = $test[$rand] ->price;
+        $kcal = $food[$rand] ->kcal;
         // dd($price);
         // dd($test[$rand]);
         // dump($test[$rand]);
         // dd($test[$rand]->id);
         
         if($kcal <= $budget){
-            array_push($set,$test[$rand]);
+            array_push($set,$food[$rand]);
             // dd($set);
                 // dd($price);
                 // dump($price);
         }else{
             continue;
         }
-        
-        // # no candidate break
-
-        # select food
-        // foreach($menus as $menu){
-        //     $price = $menu -> price;
-            // dd($price);
-            // dump($price);
-        // }
-        
-        
         // dd($menu);
         
         # calc
@@ -128,7 +144,7 @@ class MenuController extends Controller
     $menu = $set;
     // dd($menu);
     
-    return view('menus/kcal') -> with(['menus' => $menu]);
+    return view('menus/kcal',['input'=>$input]) -> with(['menus' => $menu]);
     }
     
     public function save(Menu $menu){
