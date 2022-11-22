@@ -20,22 +20,22 @@
             <form action="/input" method="POST">
                 @csrf
                 <div class=textbox>
-                    <input type="text" name="kcal" value=1000> [kcal]
+                    <input type="text" name="kcal" value=500> [kcal]
                 </div>
                 <div class = "buttonarea">
                     <button type=“submit” class=btn onclick="location.href='/kcal'">ガチャを回す</button>
                 </div>
-            </form>
             
             <div class= "inline_block">
                 <label>
                     <span class="switch child">大人version(お酒あり)</span>
                     <div class="toggle_button child">
-                        <input id="toggle" class="toggle_input" type='checkbox' />
+                        <input id="toggle" class="toggle_input" name="switch" type='checkbox' />
                         <label for="toggle" class="toggle_label"/>
                     </div>
                 </label>
             </div>
+            </form>
             
                 <div class=link>
                     <a href=http://book.saizeriya.co.jp/menu2209_j/book/#target/page_no=1 id=grand>グランドメニュー(公式)</a>
