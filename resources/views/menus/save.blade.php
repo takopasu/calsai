@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('保存内容') }}
-        </h2>
-    </x-slot>
-    
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
