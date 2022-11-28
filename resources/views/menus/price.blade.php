@@ -3,18 +3,18 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>サイゼリヤn[kcal]ガチャ</title>
+        <title>サイゼリヤn[円]ガチャ</title>
         <link href="css/calsai.css" rel="stylesheet">
     </head>
     <body class='antialiased'>
-        <h1 class="title">サイゼリヤ<br>{{$input['input']}}[kcal]ガチャ</h1>
+        <h1 class="title">サイゼリヤ<br>{{$input['input']}}[円]ガチャ</h1>
         <hr>
         <div class='body'>
             <div class=box1>
-                <form action="/kcal_input" method="POST">
+                <form action="/price_input" method="POST">
                     @csrf
                     <div class=textbox>
-                        <input type="text" name="kcal" value="{{$input['input']}}"> [kcal]
+                        <input type="text" name="price" value="{{$input['input']}}"> [円]
                     </div>
                     <div class = "buttonarea">
                         <button type=“submit” class=btn>ガチャを回す</button>
@@ -77,3 +77,4 @@
     </body>
 </html>
 </x-app-layout>
+

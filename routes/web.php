@@ -25,10 +25,11 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::controller(MenuController::class)->middleware(['auth'])->group(function(){
-    Route::get('/', 'index')->name('index');
-    Route::get('/kcal','kcal')->name('kcal');
+    Route::get('/','kcal')->name('kcal');
+    Route::get('/price', 'price')->name('price');
     Route::get('/save','save')->name('save');
-    Route::post('/input','input')->name('input');
+    Route::post('/kcal_input','kcal_input')->name('kcal_input');
+    Route::post('/price_input','price_input')->name('price_input');
 });
 
 Route::patch('/text/restore/{trashed_text}', 'TextController@restore')->name('text.restore');

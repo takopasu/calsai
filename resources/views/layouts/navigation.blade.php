@@ -12,11 +12,11 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
+                    <x-nav-link :href="route('kcal')" :active="request()->routeIs('kcal')">
                         {{ __('サイゼリヤn[kcal]ガチャ') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('kcal')" :active="request()->routeIs('kcal')">
-                        {{ __('ガチャを引いたよ') }}
+                    <x-nav-link :href="route('price')" :active="request()->routeIs('price')">
+                        {{ __('サイゼリヤn[円]ガチャ') }}
                     </x-nav-link>
                     <x-nav-link :href="route('save')" :active="request()->routeIs('save')">
                         {{ __('保存内容') }}
