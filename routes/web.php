@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\SaveController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,9 +28,13 @@ require __DIR__.'/auth.php';
 Route::controller(MenuController::class)->middleware(['auth'])->group(function(){
     Route::get('/','kcal')->name('kcal');
     Route::get('/price', 'price')->name('price');
-    Route::get('/save','save')->name('save');
     Route::post('/kcal_input','kcal_input')->name('kcal_input');
     Route::post('/price_input','price_input')->name('price_input');
+});
+
+Route::controller(SaveController::class)->middleware(['auth'])->group(function(){
+    Route::get('/save','save')->name('save');
+    Route::post('/menus_input','menus_input')->name('menus_input');
 });
 
 Route::patch('/text/restore/{trashed_text}', 'TextController@restore')->name('text.restore');

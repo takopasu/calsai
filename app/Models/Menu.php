@@ -12,14 +12,22 @@ class Menu extends Model
     use HasFactory;
     use SoftDeletes;
     
-    public function getPaginateByLimit(int $limit_count = 10)
-    {
-    // updated_atで降順に並べたあと、limitで件数制限をかける
-    return $this->orderBy('updated_at', 'DESC')->paginate($limit_count);
+    public function saves(){
+        //1つの科目を多数の生徒が履修。
+        return $this->belongsToMany(Save::class);
     }
     
-    public function kcal_knapsack($budget,$switch=null)
+    public function kcal_knapsack($input)
     {
+                
+        $budget = $input['input'];
+        $switch = $input['switch'];
+        
+        // dd($budget);
+        if($budget === null){
+            $budget = 0;
+        }
+        
         $set  =[];
         
         if($switch === 1){
@@ -77,8 +85,16 @@ class Menu extends Model
     return $menu;
     }
     
-    public function price_knapsack($budget,$switch=null)
+    public function price_knapsack($input)
     {
+        $budget = $input['input'];
+        $switch = $input['switch'];
+        
+        // dd($budget);
+        if($budget === null){
+            $budget = 0;
+        }
+        
         $set  =[];
         
         if($switch === 1){

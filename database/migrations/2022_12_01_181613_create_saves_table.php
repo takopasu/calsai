@@ -13,17 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('menu', function (Blueprint $table) {
+        Schema::create('saves', function (Blueprint $table) {
             $table->id();
-            $table->string('menu_name');
-            $table->string('category');
-            $table->string('type');
-            $table->string('order_num');
-            $table->integer('price');
-            $table->integer('kcal');
-            $table->float('solt');
+            $table->boolean('is_saved')->nullable();
+            $table->boolean('is_favorite')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
@@ -34,6 +28,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('menu');
+        Schema::dropIfExists('saves');
     }
 };
+

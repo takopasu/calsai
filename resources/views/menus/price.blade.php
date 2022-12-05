@@ -70,7 +70,14 @@
             </div>
             
             <div>
-                <a href="/save" class="save">結果を保存する</a>
+                <?php 
+                $send_menus = serialize($menus);
+                echo $send_menus;
+                ?>
+                <form action="/menus_input" method="POST">
+                    @csrf
+                    <button type="submit" name="send_menus" value= <?=$send_menus?> class="save">結果を保存する</button>
+                </form>
             </div>
             @endif
         </div>
