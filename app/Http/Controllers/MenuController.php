@@ -42,32 +42,59 @@ class MenuController extends Controller
     
     public function kcal(Request $request,Menu $menu)
     {
-        $knapsack = new Menu;
+        $menu_model = new Menu;
         
         $input = [
             'input' => $request->old('input'),
             'switch' => $request->old('switch'),
         ];
         
-        $menu = $knapsack -> kcal_knapsack($input);
-        // dd($menu);
+        #$inputを上限としてメニューをランダムに選定
+        $menu = $menu_model -> kcal_knapsack($input);
         
+        #中間テーブルを用いてsaveテーブルと紐づけ
+        $menu_id = array_column($menu,'id');
+    
+        if($menu_id != NULL){
+        
+        #インスタンス化もここで含む
+        $save_model = Save::create([
+            'is_saved' => 0,
+            'is_favorite' => 0,
+            'created_at' => now(),
+            'updated_at' => now(),
+            ]);
+        
+        $save_model -> menus() ->attach($menu_id);
+        }
         return view('menus/kcal',['input'=>$input,'menus'=>$menu]);
     }
     
     public function price(Request $request,Menu $menu)
     {
-        $knapsack = new Menu;
-        $save = new Save;
+        
+        $menu_model = new Menu;
         
         $input = [
             'input' => $request->old('input'),
             'switch' => $request->old('switch'),
         ];
 
-        $menu = $knapsack -> price_knapsack($input);
-        $save -> insert();
-        // dump($menu);
+        $menu = $menu_model -> price_knapsack($input);
+        $menu_id = array_column($menu,'id');
+        
+        if($menu_id != NULL){
+        
+        #インスタンス化もここで含む
+        $save_model = Save::create([
+            'is_saved' => 0,
+            'is_favorite' => 0,
+            'created_at' => now(),
+            'updated_at' => now(),
+            ]);
+        
+        $save_model -> menus() ->attach($menu_id);
+        }
         
         return view('menus/price',['input'=>$input,'menus'=>$menu]);
     }

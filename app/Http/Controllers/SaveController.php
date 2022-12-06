@@ -8,17 +8,24 @@ use App\Models\Save;
 
 class SaveController extends Controller
 {
-    public function menus_input(Request $request)
-    {
-        // dump($request);
-        $get_menus = $request->input('send_menus');
-        dd($get_menus);
-
+    public function is_saved(){
+        $save = Save::latest('id')
+        ->first()
+        ->update(['is_saved' => 1, 'updated_at' => now()]);
+        
         return redirect('/save');
     }
     
-    public function save(Menu $menu){
-        return view('menus/save') -> with(['menus' => $menu ->get()]);
+    public function delete_saved(){
+        $save = Save::latest('id')
+        ->first()
+        ->update(['is_saved' => 0, 'updated_at' => now()]);
+        
+        return redirect('/save');
+    }
+    
+    public function save(Menu $menu,Save $save){
+        return view('menus/save') -> with(['menus' => $menu ->get(),'saves'=> $save->get()]);
     }
     
     

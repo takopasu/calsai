@@ -70,7 +70,7 @@
             </div>
             
             <div>
-                <a href="/save" class="save">結果を保存する</a>
+                <a href="/is_saved" class="save">結果を保存する</a>
             </div>
             @endif
         </div>
