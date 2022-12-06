@@ -10,33 +10,48 @@
         <link href="css/calsai.css" rel="stylesheet">
     </head>
     <body class='antialiased'>
-        <h1 class="title">サイゼリヤ<br>n[kcalガチャ]</h1>
+        <h1 class="title">保存内容</h1>
         <hr>
             <div class='body'>
-        <div class='saves'>
+            @php
+                $price = 0;
+                $kcal = 0;
+                $salt = 0;
+            @endphp
+                
             @foreach($saves as $save)
-            
-                名前:
-                <h3 class='name'>{{ $student->name }}</h3>  
-                学籍番号:
-                <h5 class="id">{{$student->id}}</h5>
-                学年:
-                <h5 class='grade'>{{ $student->grade }}</h5>
-                年齢:
-                <h5 class='age'>{{ $student->age }}</h5>
+                @if($save["is_saved"] === 1)
+                <h3 class='name'>id: {{ $save->id }}</h3>  
                 
-                <h5 class='subject'>
-                
-                {{-- ある生徒に関連する教科の数だけ繰り返す --}}
-                @foreach($student->subjects as $subject)   
-                    {{ $subject->subject_name }}
+                @foreach($save->menus as $menu)   
+                    <div class='box2'>
+                        <div class='order_num'>{{ $menu->order_num }}</div>
+                        <div class='inline_block'>
+                            <h2 class='menu_name'>{{ $menu->menu_name }}</h2>
+                            <p class='rst'>{{ $menu->price }}円  {{ $menu->kcal }}kcal  {{ $menu->salt }}g</p>
+                            @php
+                            $price += $menu->price;
+                            $kcal += $menu->kcal;
+                            $salt += $menu->salt;
+                            @endphp
+                        </div>
+                    </div>
+                    
                 @endforeach
-                
-                </h5>
-                        
+                    
+                    <div class='box2'>
+                        <div class='inline_block'>
+                            <p class='rst'>合計 {{ $price }}円  {{ $kcal }}kcal  {{ $salt }}g</p>
+                        </div>
+                    </div>
+                    
+                    <div class='saves'>
+                        <a href ="/delete_saved">削除する</a>
+                    </div>
+                @endif
             @endforeach
             
-        </div>
+
                         
             <div class='footer'>
                 <a href ="/">戻る</a>

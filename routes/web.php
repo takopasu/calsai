@@ -34,7 +34,8 @@ Route::controller(MenuController::class)->middleware(['auth'])->group(function()
 
 Route::controller(SaveController::class)->middleware(['auth'])->group(function(){
     Route::get('/save','save')->name('save');
-    Route::post('/menus_input','menus_input')->name('menus_input');
+    Route::get('/is_saved','is_saved')->name('is_saved');
+    Route::get('/delete_saved','delete_saved')->name('delete_saved');
 });
 
 Route::patch('/text/restore/{trashed_text}', 'TextController@restore')->name('text.restore');

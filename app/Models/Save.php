@@ -19,13 +19,5 @@ class Save extends Model
     protected $fillable = [
         'id', 'is_saved', 'is_favorite',
     ];
-    
-    public function insert(){
-        DB::table('saves')->insert([
-            'is_saved' => 0,
-            'is_favorite' =>0,
-            'created_at' => now(),
-            'updated_at' => now()
-            ]);
-    }
+
 }
