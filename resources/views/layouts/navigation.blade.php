@@ -14,7 +14,7 @@
                         {{ __('サイゼリヤn[円]ガチャ') }}
                     </x-nav-link>
                     <x-nav-link :href="route('saves')" :active="request()->routeIs('saves')">
-                        {{ __('保存内容') }}
+                        {{ __('保存結果') }}
                     </x-nav-link>
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('このサイトについて') }}
@@ -95,7 +95,7 @@
                 {{ __('n[円]ガチャ') }}
             </x-responsive-nav-link>            
             <x-responsive-nav-link :href="route('saves')" :active="request()->routeIs('saves')">
-                {{ __('保存内容') }}
+                {{ __('保存結果') }}
             </x-responsive-nav-link>            
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('このサイトについて') }}

@@ -17,17 +17,16 @@
             <a href='/saves' class='url link body'>全表示はこちら</a>
             <br>
             
-            @foreach($saves as $save)
-                @if($save["is_favorite"] === 0)
-                @else
-                    <div class='box3'>
-                        <form action='/show' method='POST'>
-                            @csrf
-                            <button type='submit' name='show' class='show' value ="{{$save['id']}}">保存日時: {{ $save->created_at }}</button>
-                        </form>
-                    </div>
-                @endif
-            @endforeach
+            <div class='inline_block'>
+                @foreach($saves as $save)
+                    @if($save["is_favorite"] === 1)
+                            <form action='/show' method='POST'>
+                                @csrf
+                                <button type='submit' name='show' class='show box3' value ="{{$save['id']}}">保存日時: {{ $save->created_at }}</button>
+                            </form>
+                        </div>
+                    @endif
+                @endforeach
         </div>
     </body>
 </html>
