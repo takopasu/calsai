@@ -25,7 +25,7 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::controller(MenuController::class)->middleware(['auth'])->group(function(){
+Route::controller(MenuController::class)->group(function(){
     Route::get('/','kcal')->name('kcal');
     Route::get('/price', 'price')->name('price');
     Route::post('/kcal_input','kcal_input')->name('kcal_input');
@@ -33,9 +33,12 @@ Route::controller(MenuController::class)->middleware(['auth'])->group(function()
 });
 
 Route::controller(SaveController::class)->middleware(['auth'])->group(function(){
-    Route::get('/save','save')->name('save');
+    Route::get('/saves','save')->name('saves');
+    Route::post('/show','show')->name('show');
+    Route::get('/only_favorite','only_favorite')->name('only_favorite');
     Route::get('/is_saved','is_saved')->name('is_saved');
-    Route::get('/delete_saved','delete_saved')->name('delete_saved');
+    Route::put('/delete','delete')->name('delete');
+    Route::put('/favorite','favorite')->name('favorite');
 });
 
 Route::patch('/text/restore/{trashed_text}', 'TextController@restore')->name('text.restore');

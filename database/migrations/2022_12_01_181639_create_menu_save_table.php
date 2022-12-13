@@ -15,9 +15,10 @@ return new class extends Migration
     {
     Schema::create('menu_save', function (Blueprint $table) {
         //student_idとsubject_idを外部キーに設定
+        $table->id();
         $table->foreignId('menu_id')->constrained('menus');   //参照先のテーブル名を
         $table->foreignId('save_id')->constrained('saves');    //constrainedに記載
-        $table->primary(['menu_id', 'save_id']);  
+        
     });
     }
 

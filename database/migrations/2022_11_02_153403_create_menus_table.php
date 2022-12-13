@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('order_num');
             $table->integer('price');
             $table->integer('kcal');
-            $table->float('solt');
+            $table->float('salt');
             $table->timestamps();
             $table->softDeletes();
         });

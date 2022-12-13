@@ -53,5 +53,7 @@
                 </x-primary-button>
             </div>
         </form>
+        
+        <a href='/register' class="underline text-sm text-gray-600 hover:text-gray-900">新規登録はこちら</a>
     </x-auth-card>
 </x-guest-layout>

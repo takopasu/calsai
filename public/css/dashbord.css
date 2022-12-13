@@ -1,1 +1,42 @@
-h1{font-size: 30px}
+body {
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',YuGothic,'Yu Gothic',sans-serif;
+}
+
+.h1, .h2 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+.h1{
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+
+.h2{
+  padding-top: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+hr{
+  height: 6px;
+  width:90%;
+  background-color:#00331A;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  text-align:center;
+}
+
+.url { color: #e03ca6;
+  text-decoration: underline;}
+
+.url:visited { color: #a300b4; }
+
+.url:hover {
+    color: #5b0088;
+    font-weight: bold;
+    text-decoration: none;
+}
+
