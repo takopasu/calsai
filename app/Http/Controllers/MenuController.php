@@ -7,6 +7,7 @@ use App\Models\Menu;
 use App\Models\Save;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Facades\Auth;
 
 class MenuController extends Controller
 {
@@ -61,6 +62,7 @@ class MenuController extends Controller
         $save_model = Save::create([
             'is_saved' => 0,
             'is_favorite' => 0,
+            'user_id' => NULL,
             'created_at' => now(),
             'updated_at' => now(),
             ]);
@@ -70,7 +72,7 @@ class MenuController extends Controller
         return view('menus/kcal',['input'=>$input,'menus'=>$menu]);
     }
     
-    public function price(Request $request,Menu $menu)
+    public function price(Request $request,Menu $menu ) 
     {
         
         $menu_model = new Menu;
@@ -84,11 +86,12 @@ class MenuController extends Controller
         $menu_id = array_column($menu,'id');
         
         if($menu_id != NULL){
-        
+
         #インスタンス化もここで含む
         $save_model = Save::create([
             'is_saved' => 0,
             'is_favorite' => 0,
+            'user_id' => NULL,
             'created_at' => now(),
             'updated_at' => now(),
             ]);

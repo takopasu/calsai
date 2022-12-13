@@ -5,13 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Menu;
 use App\Models\Save;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class SaveController extends Controller
 {
     public function is_saved(){
         Save::latest('id')
         ->first()
-        ->update(['is_saved' => 1, 'updated_at' => now()]);
+        ->update(['is_saved' => 1, 'user_id' => Auth::id(),'updated_at' => now()]);
         
         return redirect('/saves');
     }
@@ -56,12 +58,12 @@ class SaveController extends Controller
         return redirect('/saves');
     }
     
-    public function save(Menu $menu,Save $save){
-        return view('menus/save') -> with(['menus' => $menu ->get(),'saves'=> $save->get()]);
+    public function save(Menu $menu,Save $save,User $user){
+        return view('menus/save') -> with(['menus' => $menu ->get(),'saves'=> Auth::user()->saves()->get()]);
     }    
     
     public function only_favorite(Menu $menu,Save $save){
-        return view('menus/only_favorite') -> with(['menus' => $menu ->get(),'saves'=> $save->get()]);
+        return view('menus/only_favorite') -> with(['menus' => $menu ->get(),'saves'=> Auth::user()->saves()->get()]);
     }    
     
     public function show(Request $request ,Menu $menu,Save $save){
