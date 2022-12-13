@@ -21,6 +21,7 @@ class MenuController extends Controller
         $input = [
            'input' => $request['kcal'],
             'switch' => $request['switch'],
+            'select' => $request['select']
            ];
 
       return redirect('/')->withInput($input);
@@ -36,6 +37,7 @@ class MenuController extends Controller
         $input = [
            'input' => $request['price'],
             'switch' => $request['switch'],
+            'select' => $request['select']
            ];
 
       return redirect('/price')->withInput($input);
@@ -48,7 +50,10 @@ class MenuController extends Controller
         $input = [
             'input' => $request->old('input'),
             'switch' => $request->old('switch'),
+            'select' => $request->old('select')
         ];
+        
+        $all_menus = $menu->get(); 
         
         #$inputを上限としてメニューをランダムに選定
         $menu = $menu_model -> kcal_knapsack($input);
@@ -69,7 +74,9 @@ class MenuController extends Controller
         
         $save_model -> menus() ->attach($menu_id);
         }
-        return view('menus/kcal',['input'=>$input,'menus'=>$menu]);
+        
+        
+        return view('menus/kcal',['input'=>$input,'menus'=>$menu,'all_menus' =>$all_menus]);
     }
     
     public function price(Request $request,Menu $menu ) 
@@ -80,9 +87,13 @@ class MenuController extends Controller
         $input = [
             'input' => $request->old('input'),
             'switch' => $request->old('switch'),
+            'select' => $request->old('select')
         ];
+        
+        $all_menus = $menu->get();
 
         $menu = $menu_model -> price_knapsack($input);
+        
         $menu_id = array_column($menu,'id');
         
         if($menu_id != NULL){
@@ -99,7 +110,7 @@ class MenuController extends Controller
         $save_model -> menus() ->attach($menu_id);
         }
         
-        return view('menus/price',['input'=>$input,'menus'=>$menu]);
+        return view('menus/price',['input'=>$input,'menus'=>$menu,'all_menus' =>$all_menus]);
     }
     
 }

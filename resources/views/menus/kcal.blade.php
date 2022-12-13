@@ -29,6 +29,21 @@
                         </div>
                     </label>
                 </div>
+                
+                <div>
+                    <h2 class='h2'>以下のものをガチャ結果に含める</h2>
+                    <select name='select' class='text-center  mb-4'>
+                        <option>選択してください</option>
+                        @foreach($all_menus as $menu)
+                                @if (!empty($select_menu) && $menu->id === $select_menu->id)
+                                    <option value="{{ $menu->id }}" selected="selected">{{ $menu->menu_name }}</option>
+                                @else
+                                    <option value="{{$menu->id}}">{{$menu->menu_name}}</option>
+                                @endif
+                        @endforeach
+                    </select>
+                </div> 
+                
                 </form>
                 
                 <div class="link">
@@ -45,7 +60,14 @@
                 $price = 0;
                 $kcal = 0;
                 $salt = 0;
+                $select_menu = $all_menus->find($input['select']);
             @endphp
+            
+            @if($select_menu != NULL)
+                @if($select_menu->kcal >= $input['input'])
+                <h2 class="box3 child h2 mb">選択したメニューのカロリーが設定値以下のため対象外です</h2>
+                @endif
+            @endif
             
             @foreach ($menus as $menu)
             <div class='box2'>

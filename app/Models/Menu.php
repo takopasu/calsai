@@ -22,6 +22,7 @@ class Menu extends Model
                 
         $budget = $input['input'];
         $switch = $input['switch'];
+        $select = $input['select'];
         
         // dd($budget);
         if($budget === null){
@@ -46,6 +47,21 @@ class Menu extends Model
                     ->where('kcal', '<=', $budget)
                     // ->where('kcal', '!=',0)
                     ->get();
+                    
+        if($select != NULL){
+            if($select != "選択してください"){
+                $select_menu = DB::table('menus')
+                    ->where('id','=', $select)
+                    ->where('kcal', '<=', $budget)
+                    // ->where('kcal', '!=',0)
+                    ->first();
+                    
+                if($select_menu != NULL){
+                    $budget -= $select_menu ->kcal;
+                    array_push($set,$select_menu);
+                }
+            }
+        }
         
         while(true){
             $food=[];
@@ -89,6 +105,7 @@ class Menu extends Model
     {
         $budget = $input['input'];
         $switch = $input['switch'];
+        $select = $input['select'];
         
         // dd($budget);
         if($budget === null){
@@ -107,6 +124,21 @@ class Menu extends Model
                     ->where('type','!=','alcohol')
                     ->get();
             }
+            
+        if($select != NULL){
+            if($select != "選択してください"){
+                $select_menu = DB::table('menus')
+                    ->where('id','=', $select)
+                    ->where('price', '<=', $budget)
+                    // ->where('kcal', '!=',0)
+                    ->first();
+                    
+                if($select_menu != NULL){
+                    $budget -= $select_menu ->price;
+                    array_push($set,$select_menu);
+                }
+            }
+        }
         
         while(true){
             $food=[];
