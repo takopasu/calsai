@@ -8,6 +8,12 @@
     </head>
     <body class='antialiased'>
         <h1 class="title">サイゼリヤ<br>{{$input['input']}}[円]ガチャ</h1>
+            @php
+                $price = 0;
+                $kcal = 0;
+                $salt = 0;
+                $select_menu = $all_menus->find($input['select']);
+            @endphp
         <hr>
         <div class='body'>
             <div class=box1>
@@ -29,6 +35,20 @@
                         </div>
                     </label>
                 </div>
+                
+                <div>
+                    <h2 class='h2'>以下のものをガチャ結果に含める</h2>
+                    <select name='select' class='text-center  mb-4'>
+                        <option>選択してください</option>
+                        @foreach($all_menus as $menu)
+                                @if (!empty($select_menu) && $menu->id === $select_menu->id)
+                                    <option value="{{ $menu->id }}" selected="selected">{{ $menu->menu_name }}</option>
+                                @else
+                                    <option value="{{$menu->id}}">{{$menu->menu_name}}</option>
+                                @endif
+                        @endforeach
+                    </select>
+                </div>
                 </form>
                 
                 <div class=link>
@@ -41,11 +61,12 @@
             <hr>
             
             @if($input['input'] != 0) 
-            @php
-                $price = 0;
-                $kcal = 0;
-                $salt = 0;
-            @endphp
+            
+            @if($select_menu != NULL)
+                @if($select_menu->price >= $input['input'])
+                <h2 class="box3 child h2 mb">選択したメニューの料金が設定値以下のため対象外です</h2>
+                @endif
+            @endif
             
             @foreach ($menus as $menu)
             <div class='box2'>
