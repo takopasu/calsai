@@ -24,7 +24,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DB01',
             'price' => 200,
             'kcal' => 0,
-            'solt' => 0,
+            'salt' => 0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -36,7 +36,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'BR01',
             'price' => 400,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -48,7 +48,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'BR02',
             'price' => 300,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -60,7 +60,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'BR03',
             'price' => 250,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -72,7 +72,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'BR04',
             'price' => 350,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -84,7 +84,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'BR05',
             'price' => 300,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -96,7 +96,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN01',
             'price' => 100,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -108,7 +108,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN02',
             'price' => 100,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -120,7 +120,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN03',
             'price' => 200,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -132,7 +132,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN04',
             'price' => 200,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -144,7 +144,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN05',
             'price' => 400,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -156,7 +156,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN06',
             'price' => 400,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -168,7 +168,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN07',
             'price' => 1100,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -180,7 +180,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN08',
             'price' => 1100,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -191,7 +191,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN12',
             'price' => 1100,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -203,7 +203,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN13',
             'price' => 1100,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -216,7 +216,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN14',
             'price' => 1100,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -228,7 +228,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN15',
             'price' => 1100,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -240,7 +240,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN16',
             'price' => 1100,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -252,11 +252,43 @@ class MenuSeeder extends Seeder
             'order_num' => 'WN19',
             'price' => 2200,
             'kcal' => 0.0,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
-
+        DB::table('menus')->insert([
+            'menu_name' =>'ミラノ風ドリア',
+            'category' =>'meal',
+            'type' =>'doria',
+            'order_num' => 'DG01',
+            'price' => 300,
+            'kcal' => 521,
+            'salt' => 2.5,
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
+        ]);
+        DB::table('menus')->insert([
+            'menu_name' =>'チーズたっぷりミラノ風ドリア',
+            'category' =>'meal',
+            'type' =>'doria',
+            'order_num' => 'DG02',
+            'price' => 400,
+            'kcal' => 722,
+            'salt' => 3.4,
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
+        ]);
+        DB::table('menus')->insert([
+            'menu_name' =>'半熟卵のミラノ風ドリア',
+            'category' =>'meal',
+            'type' =>'doria',
+            'order_num' => 'DG05',
+            'price' => 350,
+            'kcal' => 604,
+            'salt' => 2.7,
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
+        ]);
         DB::table('menus')->insert([
             'menu_name' =>'セットプチフォッカ付きミラノ風ドリア',
             'category' =>'meal',
@@ -264,7 +296,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DG05',
             'price' => 400,
             'kcal' => 628,
-            'solt' => 2.9,
+            'salt' => 2.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -276,11 +308,10 @@ class MenuSeeder extends Seeder
             'order_num' => 'DG07',
             'price' => 400,
             'kcal' => 505,
-            'solt' => 2.0,
+            'salt' => 2.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
-        
         
         
         DB::table('menus')->insert([
@@ -290,7 +321,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT01',
             'price' => 400,
             'kcal' => 582,
-            'solt' => 2.7,
+            'salt' => 2.7,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -302,7 +333,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT02',
             'price' => 500,
             'kcal' => 730,
-            'solt' => 2.8,
+            'salt' => 2.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -314,7 +345,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT03',
             'price' => 500,
             'kcal' => 702,
-            'solt' => 2.9,
+            'salt' => 2.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -326,7 +357,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT06',
             'price' => 600,
             'kcal' => 750,
-            'solt' => 3.4,
+            'salt' => 3.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);        
@@ -338,7 +369,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT07',
             'price' => 500,
             'kcal' => 635,
-            'solt' => 3.1,
+            'salt' => 3.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -350,7 +381,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT09',
             'price' => 1000,
             'kcal' => 548,
-            'solt' => 1.8,
+            'salt' => 1.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -362,7 +393,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT11',
             'price' => 700,
             'kcal' => 299,
-            'solt' => 0.7,
+            'salt' => 0.7,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -374,7 +405,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT12',
             'price' => 900,
             'kcal' => 545,
-            'solt' => 2.4,
+            'salt' => 2.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -386,7 +417,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT15',
             'price' => 550,
             'kcal' => 700,
-            'solt' => 3.6,
+            'salt' => 3.6,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -398,19 +429,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'MT18',
             'price' => 600,
             'kcal' => 660,
-            'solt' => 3.1,
-            'created_at' => new DateTime(),
-            'updated_at' => new DateTime(),
-        ]);
-        
-        DB::table('menus')->insert([
-            'menu_name' =>'トッピング半熟卵',
-            'category' =>'sidedish',
-            'type' =>'topping',
-            'order_num' => 'TP01',
-            'price' => 50,
-            'kcal' => 83,
-            'solt' => 0.2,
+            'salt' => 3.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -422,7 +441,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'TP02',
             'price' => 100,
             'kcal' => 78,
-            'solt' => 0.8,
+            'salt' => 0.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);    
@@ -434,7 +453,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'TP03',
             'price' => 100,
             'kcal' => 88,
-            'solt' => 0.5,
+            'salt' => 0.5,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]); 
@@ -446,7 +465,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'TP04',
             'price' => 100,
             'kcal' => 72,
-            'solt' => 0.3,
+            'salt' => 0.3,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -458,23 +477,10 @@ class MenuSeeder extends Seeder
             'order_num' => 'TP05',
             'price' => 100,
             'kcal' => 97,
-            'solt' => 0.7,
+            'salt' => 0.7,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
-        
-        
-        DB::table('menus')->insert([
-            'menu_name' =>'やみつきスパイス',
-            'category' =>'sidedish',
-            'type' =>'topping',
-            'order_num' => 'TP06',
-            'price' => 50,
-            'kcal' => 6,
-            'solt' => 1.4,
-            'created_at' => new DateTime(),
-            'updated_at' => new DateTime(),
-        ]);      
 
         DB::table('menus')->insert([
             'menu_name' =>'チキンのシーザーサラダ',
@@ -483,7 +489,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SA06',
             'price' => 350,
             'kcal' => 203,
-            'solt' => 1.3,
+            'salt' => 1.3,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -495,7 +501,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SA56',
             'price' => 500,
             'kcal' => 305,
-            'solt' => 2.0,
+            'salt' => 2.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -507,7 +513,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SA02',
             'price' => 350,
             'kcal' => 127,
-            'solt' => 1.4,
+            'salt' => 1.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -519,7 +525,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SA52',
             'price' => 500,
             'kcal' => 191,
-            'solt' => 2.2,
+            'salt' => 2.2,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);       
@@ -531,7 +537,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SA04',
             'price' => 350,
             'kcal' => 173,
-            'solt' => 0.7,
+            'salt' => 0.7,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -543,7 +549,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SA54',
             'price' => 500,
             'kcal' => 259,
-            'solt' => 1.1,
+            'salt' => 1.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -555,7 +561,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SA12',
             'price' => 450,
             'kcal' => 151,
-            'solt' => 0.9,
+            'salt' => 0.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -567,7 +573,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SA62',
             'price' => 600,
             'kcal' => 178,
-            'solt' => 1.1,
+            'salt' => 1.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -579,7 +585,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA13',
             'price' => 200,
             'kcal' => 93,
-            'solt' => 0.9,
+            'salt' => 0.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -591,7 +597,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA16',
             'price' => 400,
             'kcal' => 55,
-            'solt' => 1.4,
+            'salt' => 1.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -603,7 +609,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA66',
             'price' => 800,
             'kcal' => 110,
-            'solt' => 2.8,
+            'salt' => 2.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -615,7 +621,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA20',
             'price' => 300,
             'kcal' => 209,
-            'solt' => 0.5,
+            'salt' => 0.5,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -627,7 +633,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA70',
             'price' => 600,
             'kcal' => 418,
-            'solt' => 1.0,
+            'salt' => 1.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -639,7 +645,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA25',
             'price' => 200,
             'kcal' => 199,
-            'solt' => 1.0,
+            'salt' => 1.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -651,7 +657,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA12',
             'price' => 300,
             'kcal' => 156,
-            'solt' => 1.2,
+            'salt' => 1.2,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -663,7 +669,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA19',
             'price' => 300,
             'kcal' => 125,
-            'solt' => 1.1,
+            'salt' => 1.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -675,7 +681,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA15',
             'price' => 250,
             'kcal' => 389,
-            'solt' => 2.1,
+            'salt' => 2.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -687,7 +693,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA04',
             'price' => 300,
             'kcal' => 215,
-            'solt' => 1.4,
+            'salt' => 1.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -699,7 +705,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA07',
             'price' => 400,
             'kcal' => 425,
-            'solt' => 2.9,
+            'salt' => 2.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -711,7 +717,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA26',
             'price' => 350,
             'kcal' => 202,
-            'solt' => 0.8,
+            'salt' => 0.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -723,7 +729,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA01',
             'price' => 300,
             'kcal' => 295,
-            'solt' => 1.8,
+            'salt' => 1.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -735,7 +741,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA05',
             'price' => 400,
             'kcal' => 220,
-            'solt' => 1.3,
+            'salt' => 1.3,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -747,7 +753,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA10',
             'price' => 400,
             'kcal' => 170,
-            'solt' => 1.4,
+            'salt' => 1.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -759,7 +765,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA18',
             'price' => 300,
             'kcal' => 319,
-            'solt' => 2.0,
+            'salt' => 2.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -771,7 +777,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA02',
             'price' => 400,
             'kcal' => 224,
-            'solt' => 0.6,
+            'salt' => 0.6,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -783,7 +789,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'AA52',
             'price' => 800,
             'kcal' => 448,
-            'solt' => 1.2,
+            'salt' => 1.2,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -795,7 +801,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ01',
             'price' => 400,
             'kcal' => 557,
-            'solt' => 2.4,
+            'salt' => 2.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -807,7 +813,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ51',
             'price' => 500,
             'kcal' => 635,
-            'solt' => 3.2,
+            'salt' => 3.2,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -819,7 +825,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ02',
             'price' => 500,
             'kcal' => 566,
-            'solt' => 2.2,
+            'salt' => 2.2,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -831,7 +837,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ52',
             'price' => 600,
             'kcal' => 644,
-            'solt' => 3.0,
+            'salt' => 3.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -843,7 +849,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ06',
             'price' => 400,
             'kcal' => 624,
-            'solt' => 2.4,
+            'salt' => 2.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -855,7 +861,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ56',
             'price' => 500,
             'kcal' => 702,
-            'solt' => 3.2,
+            'salt' => 3.2,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -867,7 +873,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ07',
             'price' => 500,
             'kcal' => 648,
-            'solt' => 3.3,
+            'salt' => 3.3,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -879,7 +885,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ57',
             'price' => 600,
             'kcal' => 726,
-            'solt' => 4.1,
+            'salt' => 4.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -891,7 +897,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ08',
             'price' => 400,
             'kcal' => 710,
-            'solt' => 4.1,
+            'salt' => 4.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -903,7 +909,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PZ58',
             'price' => 500,
             'kcal' => 788,
-            'solt' => 4.1,
+            'salt' => 4.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -915,7 +921,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'RP01',
             'price' => 150,
             'kcal' => 303,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -927,7 +933,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'RP02',
             'price' => 200,
             'kcal' => 454,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -939,7 +945,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'RP03',
             'price' => 100,
             'kcal' => 151,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -951,7 +957,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'RP04',
             'price' => 200,
             'kcal' => 246,
-            'solt' => 0.8,
+            'salt' => 0.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -963,7 +969,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'RP05',
             'price' => 100,
             'kcal' => 107,
-            'solt' => 0.4,
+            'salt' => 0.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -975,7 +981,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'RP06',
             'price' => 150,
             'kcal' => 214,
-            'solt' => 0.8,
+            'salt' => 0.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -987,7 +993,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'RP08',
             'price' => 150,
             'kcal' => 189,
-            'solt' => 1.0,
+            'salt' => 1.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -999,7 +1005,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'RP09',
             'price' => 200,
             'kcal' => 245,
-            'solt' => 1.1,
+            'salt' => 1.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1011,7 +1017,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SU01',
             'price' => 150,
             'kcal' => 146,
-            'solt' => 1.1,
+            'salt' => 1.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1023,7 +1029,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SU07',
             'price' => 300,
             'kcal' => 216,
-            'solt' => 2.4,
+            'salt' => 2.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1035,7 +1041,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'SU10',
             'price' => 450,
             'kcal' => 317,
-            'solt' => 2.2,
+            'salt' => 2.2,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1047,7 +1053,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA01',
             'price' => 400,
             'kcal' => 548,
-            'solt' => 1.9,
+            'salt' => 1.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1059,7 +1065,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA51',
             'price' => 600,
             'kcal' => 822,
-            'solt' => 2.9,
+            'salt' => 2.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1071,7 +1077,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA02',
             'price' => 400,
             'kcal' => 564,
-            'solt' => 2.7,
+            'salt' => 2.7,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1083,7 +1089,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA52',
             'price' => 600,
             'kcal' => 846,
-            'solt' => 4.1,
+            'salt' => 4.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1095,7 +1101,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA03',
             'price' => 300,
             'kcal' => 541,
-            'solt' => 1.6,
+            'salt' => 1.6,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1107,7 +1113,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA53',
             'price' => 450,
             'kcal' => 812,
-            'solt' => 2.4,
+            'salt' => 2.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1119,7 +1125,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA05',
             'price' => 500,
             'kcal' => 740,
-            'solt' => 2.5,
+            'salt' => 2.5,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1131,7 +1137,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA55',
             'price' => 700,
             'kcal' => 1110,
-            'solt' => 3.8,
+            'salt' => 3.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1143,7 +1149,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA06',
             'price' => 500,
             'kcal' => 665,
-            'solt' => 2.6,
+            'salt' => 2.6,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1155,7 +1161,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA56',
             'price' => 700,
             'kcal' => 998,
-            'solt' => 3.9,
+            'salt' => 3.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1167,7 +1173,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA07',
             'price' => 400,
             'kcal' => 684,
-            'solt' => 2.6,
+            'salt' => 2.6,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1179,7 +1185,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA57',
             'price' => 600,
             'kcal' => 1026,
-            'solt' => 3.9,
+            'salt' => 3.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1191,7 +1197,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA08',
             'price' => 300,
             'kcal' => 539,
-            'solt' => 1.6,
+            'salt' => 1.6,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1203,7 +1209,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA58',
             'price' => 450,
             'kcal' => 809,
-            'solt' => 2.4,
+            'salt' => 2.4,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1215,7 +1221,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA11',
             'price' => 500,
             'kcal' => 622,
-            'solt' => 2.5,
+            'salt' => 2.5,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1227,7 +1233,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA61',
             'price' => 700,
             'kcal' => 933,
-            'solt' => 3.8,
+            'salt' => 3.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1239,7 +1245,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA13',
             'price' => 600,
             'kcal' => 453,
-            'solt' => 1.9,
+            'salt' => 1.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1251,7 +1257,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA63',
             'price' => 800,
             'kcal' => 680,
-            'solt' => 2.9,
+            'salt' => 2.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1263,7 +1269,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA15',
             'price' => 600,
             'kcal' => 664,
-            'solt' => 2.0,
+            'salt' => 2.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1275,7 +1281,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA65',
             'price' => 800,
             'kcal' => 996,
-            'solt' => 3.0,
+            'salt' => 3.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1287,7 +1293,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA17',
             'price' => 350,
             'kcal' => 624,
-            'solt' => 1.8,
+            'salt' => 1.8,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1299,7 +1305,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA18',
             'price' => 600,
             'kcal' => 818,
-            'solt' => 3.3,
+            'salt' => 3.3,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1311,7 +1317,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA68',
             'price' => 800,
             'kcal' => 1227,
-            'solt' => 3.3,
+            'salt' => 3.3,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1323,7 +1329,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA19',
             'price' => 400,
             'kcal' => 611,
-            'solt' => 3.0,
+            'salt' => 3.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1335,7 +1341,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA69',
             'price' => 600,
             'kcal' => 912,
-            'solt' => 4.5,
+            'salt' => 4.5,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1347,7 +1353,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA23',
             'price' => 500,
             'kcal' => 762,
-            'solt' => 3.3,
+            'salt' => 3.3,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1359,7 +1365,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA73',
             'price' => 700,
             'kcal' => 1143,
-            'solt' => 5.0,
+            'salt' => 5.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1371,7 +1377,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA25',
             'price' => 400,
             'kcal' => 416,
-            'solt' => 3.0,
+            'salt' => 3.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1383,7 +1389,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'PA75',
             'price' => 600,
             'kcal' => 624,
-            'solt' => 4.5,
+            'salt' => 4.5,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1395,7 +1401,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE01',
             'price' => 300,
             'kcal' => 229,
-            'solt' => 0.3,
+            'salt' => 0.3,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1407,7 +1413,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE02',
             'price' => 200,
             'kcal' => 114,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1419,7 +1425,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE04',
             'price' => 450,
             'kcal' => 367,
-            'solt' => 0.9,
+            'salt' => 0.9,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1431,7 +1437,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE05',
             'price' => 250,
             'kcal' => 121,
-            'solt' => 0.1,
+            'salt' => 0.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1443,7 +1449,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE06',
             'price' => 250,
             'kcal' => 216,
-            'solt' => 0.1,
+            'salt' => 0.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1455,7 +1461,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE07',
             'price' => 300,
             'kcal' => 166,
-            'solt' => 0.1,
+            'salt' => 0.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1467,7 +1473,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE08',
             'price' => 400,
             'kcal' => 330,
-            'solt' => 0.1,
+            'salt' => 0.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1478,7 +1484,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE11',
             'price' => 200,
             'kcal' => 127,
-            'solt' => 0.0,
+            'salt' => 0.0,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1491,7 +1497,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE12',
             'price' => 500,
             'kcal' => 445,
-            'solt' => 0.2,
+            'salt' => 0.2,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1503,7 +1509,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE13',
             'price' => 350,
             'kcal' => 164,
-            'solt' => 0.1,
+            'salt' => 0.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1515,7 +1521,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE14',
             'price' => 400,
             'kcal' => 273,
-            'solt' => 0.1,
+            'salt' => 0.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1527,7 +1533,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE15',
             'price' => 350,
             'kcal' => 165,
-            'solt' => 0.1,
+            'salt' => 0.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1539,7 +1545,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE17',
             'price' => 400,
             'kcal' => 299,
-            'solt' => 0.5,
+            'salt' => 0.5,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1551,7 +1557,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE25',
             'price' => 350,
             'kcal' => 145,
-            'solt' => 0.1,
+            'salt' => 0.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
@@ -1563,7 +1569,7 @@ class MenuSeeder extends Seeder
             'order_num' => 'DE28',
             'price' => 250,
             'kcal' => 128,
-            'solt' => 0.1,
+            'salt' => 0.1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);

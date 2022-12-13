@@ -16,6 +16,17 @@ hr{
   text-align:center;
 }
 
+.url { color: #e03ca6;
+  text-decoration: underline;}
+
+.url:visited { color: #a300b4; }
+
+.url:hover {
+    color: #5b0088;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .body {
   text-align: center;
 }
@@ -28,7 +39,6 @@ hr{
   padding: 0;
 }
 
-/*index用*/
 .box1{
   margin       : auto;
   width        : 70%;
@@ -52,7 +62,7 @@ hr{
   padding-bottom: 1.5em;
   margin: 1em 1em;
   text-decoration: none;
-  background: rgba(0,124,0,0.8);
+  background: #007C00;
   color: #ffffff;
 }
 
@@ -65,6 +75,7 @@ hr{
   text-decoration: none;
   background: #97D077;
   color: #12190E;
+  border-radius: 10px;
 }
 
 .inline_block{
@@ -159,8 +170,6 @@ hr{
   margin: auto;
 }
 
-/*get用*/
-
 .box2{
   display:flex;
   align-items:center;
@@ -191,4 +200,18 @@ hr{
 .rst{
   display: block;
   margin:auto;
+}
+
+.box3{
+  display:inline-block;
+  background   : #B3E2BC;
+  background:#fcfcff; 
+  padding:15px; 
+  border:1px solid #3b5998; 
+  border-radius:10px; 
+  word-break:break-all;
+}
+
+.show{
+  padding: 0.125rem;
 }

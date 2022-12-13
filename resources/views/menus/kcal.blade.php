@@ -31,10 +31,10 @@
                 </div>
                 </form>
                 
-                <div class=link>
-                    <a href=http://book.saizeriya.co.jp/menu2209_j/book/#target/page_no=1 id=grand>グランドメニュー(公式)</a>
+                <div class="link">
+                    <a href=http://book.saizeriya.co.jp/menu2209_j/book/#target/page_no=1 id=grand class='url'>グランドメニュー(公式)</a>
                     <br>
-                    <a href=https://fukla-health.com/tools/eer id=check_cal>1日に必要カロリーの計算</a>
+                    <a href=https://fukla-health.com/tools/eer id=check_cal class='url'>1日に必要なカロリーの計算(参考)</a>
                 </div>
             </div>
             

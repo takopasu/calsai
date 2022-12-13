@@ -11,14 +11,14 @@
     </head>
     <body class='antialiased'>
         <br>
-        <h1 class="title">保存内容</h1>
+        <h1 class="title">お気に入り</h1>
         <hr>
             <div class='body'>
-            <a href='/only_favorite' class='url link body'>お気に入りのみはこちら</a>
+            <a href='/saves' class='url link body'>全表示はこちら</a>
             <br>
             
             @foreach($saves as $save)
-                @if($save["is_saved"] === 0)
+                @if($save["is_favorite"] === 0)
                 @else
                     <div class='box3'>
                         <form action='/show' method='POST'>
