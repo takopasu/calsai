@@ -12,12 +12,17 @@ class Save extends Model
     use HasFactory;
 
     public function menus(){
-        //1つの科目を多数の生徒が履修。
+        //中間テーブル用
         return $this->belongsToMany(Menu::class);
     }
     
+    public function user(){
+    //   ユーザー紐づけ用
+        return $this->belongsTo(User::class);
+    }
+
     protected $fillable = [
-        'id', 'is_saved', 'is_favorite',
+        'id', 'is_saved', 'is_favorite','user_id'
     ];
 
 }

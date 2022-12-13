@@ -17,6 +17,13 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    
+    // リレーション
+    public function saves()   
+    {
+        return $this->hasMany(Save::class);  
+    }
+    
     protected $fillable = [
         'name',
         'email',
