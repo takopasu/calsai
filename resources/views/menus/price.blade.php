@@ -7,6 +7,11 @@
         <link href="css/calsai.css" rel="stylesheet">
     </head>
     <body class='antialiased'>
+        <style>
+            select{
+              width: 50%;
+            }
+        </style>
         <h1 class="title">サイゼリヤ<br>{{$input['input']}}[円]ガチャ</h1>
             @php
                 $price = 0;
