@@ -7,6 +7,11 @@
         <link href="css/calsai.css" rel="stylesheet">
     </head>
     <body class='antialiased'>
+        <style>
+            select{
+              width: 50%;
+            }
+        </style>
         <h1 class="title">サイゼリヤ<br>{{$input['input']}}[kcal]ガチャ</h1>
         <hr>
         <div class='body'>
@@ -32,7 +37,8 @@
                 
                 <div>
                     <h2 class='h2'>以下のものをガチャ結果に含める</h2>
-                    <select name='select' class='text-center  mb-4'>
+                    <select name='select' class='text-center mb-4'>
+                        <optgroup label=""></optgroup>
                         <option>選択してください</option>
                         @foreach($all_menus as $menu)
                                 @if (!empty($select_menu) && $menu->id === $select_menu->id)
