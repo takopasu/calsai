@@ -7,6 +7,8 @@ use App\Http\Requests\Auth\LoginRequest;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use Socialite;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -50,5 +52,35 @@ class AuthenticatedSessionController extends Controller
         $request->session()->regenerateToken();
 
         return redirect('/');
+    }
+    
+    public function redirectToGoogle()
+    {
+        // Google へのリダイレクト
+        return Socialite::driver('google')->redirect();
+    }
+
+    public function handleGoogleCallback()
+    {
+        $gUser = Socialite::driver('google')->stateless()->user();
+        // email が合致するユーザーを取得
+        $user = User::where('email', $gUser->email)->first();
+        // 見つからなければ新しくユーザーを作成
+        if ($user == null) {
+            $user = $this->createUserByGoogle($gUser);
+        }
+        // ログイン処理
+        \Auth::login($user, true);
+        return redirect('/');
+    }
+
+    public function createUserByGoogle($gUser)
+    {
+        $user = User::create([
+            'name'     => $gUser->name,
+            'email'    => $gUser->email,
+            'password' => \Hash::make(uniqid()),
+        ]);
+        return $user;
     }
 }

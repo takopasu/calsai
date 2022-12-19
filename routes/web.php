@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\SaveController;
+use App\Http\Controllers\GoogleLoginController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,5 +43,8 @@ Route::controller(SaveController::class)->middleware(['auth'])->group(function()
     Route::put('/delete','delete')->name('delete');
     Route::put('/favorite','favorite')->name('favorite');
 });
+
+Route::get('/login/google', [AuthenticatedSessionController::class, 'redirectToGoogle']);
+Route::get('/login/google/callback', [AuthenticatedSessionController::class, 'handleGoogleCallback']);
 
 Route::patch('/text/restore/{trashed_text}', 'TextController@restore')->name('text.restore');
