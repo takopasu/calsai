@@ -9,7 +9,7 @@
     <body class='antialiased'>
         <style>
             select{
-              width: 50%;
+              width: 60%;
             }
         </style>
         <h1 class="title">サイゼリヤ<br>{{$input['input']}}[円]ガチャ</h1>
