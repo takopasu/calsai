@@ -14,7 +14,7 @@ Twitterでmarusho_summers様が開発したサイゼリヤ1000円ガチャを知
 https://calsai.herokuapp.com/
 
 ### テスト用アカウント
-メールアドレス:dummy@gmail.com  
+メールアドレス:dummy1219@gmail.com  
 パスワード:test1219
 
 ### 利用方法
