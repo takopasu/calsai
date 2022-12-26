@@ -22,8 +22,6 @@ https://calsai.herokuapp.com/
 その際、アルコールを含むメニューの切り替えや選択したメニューは必ず結果に含むオプションなどが利用できます。
 
 ## 開発環境
-Windows 11  
-AWS(cloud9)  
 Laravel 9.38.0  
 Laravel/Socialite 5.5  
 Laravel/Breeze 1.14  
@@ -60,9 +58,9 @@ kcalでのガチャ
 ガチャ結果とユーザーの紐づけ  
 
 ### 工夫したポイント
-モバイルファーストでの開発
-ガチャ結果を保存するために中間テーブルを利用した多対多のリレーションの実装  
-ログイン機能にSocialiteを用いてGoogleアカウントでのログインを実現
+モバイルファーストでの開発  
+ガチャ結果を保存するために中間テーブルを利用した多対多のリレーションの実装    
+ログイン機能にSocialiteを用いてGoogleアカウントでのログインを実現  
 
 ## ER図  
 ![page_layout-ER図 drawio](https://user-images.githubusercontent.com/105765781/208471495-123d8c6b-e400-45ce-bcd0-ea1116c2fba2.png)
