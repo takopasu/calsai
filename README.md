@@ -65,6 +65,10 @@ kcalでのガチャ
 ## ER図  
 ![page_layout-ER図 drawio](https://user-images.githubusercontent.com/105765781/208471495-123d8c6b-e400-45ce-bcd0-ea1116c2fba2.png)
 
+##デモ
+https://user-images.githubusercontent.com/105765781/210137629-bd599300-bca9-4df4-92fc-2ae8dae57cf8.mp4
+
+
 
 
 
